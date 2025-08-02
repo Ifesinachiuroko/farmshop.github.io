@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wallet</title>
+  <link rel="stylesheet" href="wallet.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🔵 Logo</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <div class="wallet-container">
+    <h1>Connect Your Wallet</h1>
+
+    <button id="connectMetaMask">Connect MetaMask</button>
+    <button id="connectWalletConnect">Connect WalletConnect</button>
+
+    <div id="walletInfo" class="wallet-info hidden">
+      <p><strong>Wallet Address:</strong> <span id="userAddress"></span></p>
+      <p><strong>ETH Balance:</strong> <span id="ethBalance"></span></p>
+      <p><strong>USD Equivalent:</strong> <span id="usdValue"></span></p>
+    </div>
+  </div>
+
+
+
+ <footer>
+    <a href="#">FAQ</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+    <a href="#">Discord</a>
+  </footer>
+      
+  <script src="wallet.js" defer></script>
+
+</body>
+</html>
